@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+}
+
+:root {
+    --prim-color: #333333;
+    --second-color: #4f4f4f;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 88vw;
+    margin: 0 auto;
+}
+
+header {
+    padding: 2.5vw 0;
+}
+
+header .logo {
+    font-weight: 700;
+    font-size: 1.3vw;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--prim-color);
+}
+
+.content-wraper {
+    display: flex;
+    align-items: center;
+    gap: 0 7vw;
+}
+
+.img-box {
+    width: 100%;
+    max-width: 30vw;
+}
+
+.img-box img {
+    max-width: 100%;
+}
+
+.content-sec {
+    padding: 7vw 0 18vw;
+}
+
+.content-box h2 {
+    font-size: 3.5vw;
+    line-height: 1.4;
+    letter-spacing: -0.035em;
+    color: var(--prim-color);
+}
+
+.content-box {
+    max-width: 35vw;
+}
+
+.content-box p {
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: var(--second-color);
+    max-width: 22vw;
+    margin: 2.25vw 0 3.5vw;
+}
+
+.content-box a {
+    padding: 1.4vw 2.25vw;
+    background: var(--prim-color);
+    color: #fff;
+    font-size: .85vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    display: inline-block;
+    transition: all .4s ease;
+}
+
+.content-box a:hover {
+    background: var(--second-color);
+}
+
+.footer {
+    padding: 1vw 0 2vw;
+}
+
+.footer .dev-text {
+    font-size: .85vw;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    text-align: center;
+    color: #bdbdbd;
+}
+
+.footer .dev-text a {
+    font-weight: 700;
+    color: #bdbdbd;
+    text-decoration: underline;
+}
+
+/* Responsive */
+
+@media(max-width:991px){
+    header .logo {
+        font-size: 22px;
+    }
+    
+    header {
+        padding: 30px 0;
+    }
+    
+    .img-box {
+        max-width: 45%;
+    }
+    
+    .content-box h2 {
+        font-size: 44px;
+        line-height: 1.1;
+    }
+    
+    .content-box {
+        max-width: 50%;
+    }
+    
+    .content-box p {
+        font-size: 18px;
+        max-width: 100%;
+        margin: 30px 0 40px;
+    }
+    
+    .content-box a {
+        font-size: 14px;
+        padding: 23px 44px;
+    }
+    
+    .footer .dev-text {font-size: 14px;}
+    
+    .footer {
+        padding: 10px 0 20px;
+    }
+}
+
+@media(max-width:767px){
+    header .logo {
+        font-size: 22px;
+    }
+    
+    header {
+        padding: 30px 0;
+    }
+    
+    .img-box {
+        max-width: 45%;
+    }
+    
+    .content-box h2 {
+        font-size: 44px;
+        line-height: 1.1;
+    }
+    
+    .content-box {
+        max-width: 50%;
+    }
+    
+    .content-box p {
+        font-size: 18px;
+        max-width: 100%;
+        margin: 30px 0 40px;
+    }
+    
+    .content-box a {
+        font-size: 14px;
+        padding: 23px 44px;
+    }
+    
+    .footer .dev-text {
+        font-size: 14px;
+    }
+    
+    .footer {
+        padding: 20px 0 30px;
+    }
+    
+    .img-box {
+        max-width: 100%;
+    }
+    
+    .content-wraper {
+        flex-wrap: wrap;
+    }
+    
+    .content-box {
+        max-width: 100%;
+        margin-top: 60px;
+    }
+    
+}
